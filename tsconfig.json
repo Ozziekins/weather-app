@@ -2,14 +2,28 @@
 	"extends": "./.svelte-kit/tsconfig.json",
 	"compilerOptions": {
 		"allowJs": true,
+		"baseUrl": ".",
 		"checkJs": true,
+		"declaration": true,
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
+		"module": "esnext",
+		"paths": {
+			"$src/*": ["src/*"],
+			"$stores/*": ["src/stores/*"],
+			"$lib/*": ["src/lib/*"],
+			"$assets/*": ["src/assets/*"],
+			"$utils/*": ["src/utils/*"]
+		},
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"sourceMap": true,
-		"strict": true
-	}
+		"strict": true,
+		"target": "esnext",
+		"useDefineForClassFields": true,
+	},
+	"include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],
+	"references": [{ "path": "./tsconfig.node.json" }]
 	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
 	//
 	// If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes
