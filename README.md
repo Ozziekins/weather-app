@@ -1,6 +1,6 @@
 # Weather App
 
-The Weather App is a simple web application that allows users to check the current weather conditions for a specific location. With a clean and intuitive interface, users can easily view the temperature, feels-like temperature, humidity, and a descriptive icon representing the weather conditions.
+This [Weather App](https://ozzies-weather-app.netlify.app/) is a simple web application that allows users to check the current weather conditions for a specific location. With a clean and intuitive interface, users can easily view the temperature, feels-like temperature, humidity, and a descriptive icon representing the weather conditions.
 
 ## Features
 - Automatic geolocation detection to provide weather information for the user's current location
