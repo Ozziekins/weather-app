@@ -54,7 +54,7 @@
     display: flex;
     overflow: auto;
     padding-block: 1em;
-    border-block: 1px solid $white;
+    // border-block: 1px solid $black;
     scroll-snap-type: x mandatory;
   }
 
@@ -83,7 +83,7 @@
 
     &-icon,
     &-label {
-      background: $transparent-gray;
+      background: $background-white;
     }
   }
 

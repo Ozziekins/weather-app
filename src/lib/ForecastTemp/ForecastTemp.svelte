@@ -6,6 +6,7 @@
 </script>
 
 <section class="wrapper">
+  <div class="header-line"></div>
   <header class="header">
     <h2 class="heading">Forecast</h2>
     <ForecastMode bind:mode />
@@ -24,5 +25,10 @@
 
   .heading {
     font-size: $fs-medium;
+  }
+
+  .header-line {
+    border-bottom: 1px solid $black;
+    margin-bottom: 0.4em;
   }
 </style>

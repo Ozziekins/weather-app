@@ -32,7 +32,7 @@
         top: 100%;
         height: 1px;
         inset-inline: 0.6rem;
-        background-color: $transparent-gray;
+        background-color: $background-white;
         z-index: 2;
       }
     }
@@ -49,11 +49,11 @@
     padding: 0.6rem 0.6rem;
     text-align: right;
     cursor: pointer;
-    background-color: $white;
+    background-color: $background-white;
     transition: background-color 200ms ease;
 
     &:hover {
-      background-color: adjust-color($color: $white, $lightness: -5%);
+      background-color: adjust-color($color: $background-white, $lightness: -5%);
     }
   }
 

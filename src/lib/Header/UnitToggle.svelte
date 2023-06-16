@@ -33,7 +33,7 @@
     height: $toggle-height;
     position: relative;
 
-    background-color: $transparent-gray;
+    background-color: $background-white;
     border-radius: 99em;
     cursor: pointer;
   }
@@ -46,7 +46,7 @@
 
     transition: 100ms ease;
     border-radius: 99em;
-    background-color: $white;
+    background-color: $light-purple;
     box-shadow: 0px 2px 4px rgba(45, 45, 45, 0.5);
   }
 
@@ -60,7 +60,7 @@
     }
 
     &:focus-visible ~ .slider {
-      outline: 2px solid $white;
+      outline: 2px solid $black;
       outline-offset: 2px;
     }
   }

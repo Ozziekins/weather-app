@@ -3,5 +3,6 @@ export interface CurrentTemp {
   temp: number;
   feels_like: number;
   humidity: number;
+  wind: number;
   iconCode: number;
 }

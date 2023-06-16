@@ -5,14 +5,14 @@
   import CountryFlag from "$lib/CountryFlag.svelte";
 </script>
 
-<label class="label" for="search">Search for a city</label>
+<label class="label" for="search"></label>
 <div class="field">
-  <SearchField />
   {#if $location.country}
     <span class="flag">
       <CountryFlag code={$location.country} />
     </span>
   {/if}
+  <SearchField />
 </div>
 
 <style lang="scss">
@@ -29,5 +29,6 @@
 
   .flag {
     font-size: 2rem;
+    margin-right: 0.5rem;
   }
 </style>

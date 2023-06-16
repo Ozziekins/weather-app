@@ -63,7 +63,7 @@
         left: 100%;
         inset-block: 1em;
         width: 1px;
-        background-color: $white;
+        // background-color: $black;
       }
     }
   }

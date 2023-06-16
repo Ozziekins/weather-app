@@ -28,8 +28,8 @@
 <style lang="scss">
   .wrapper {
     display: flex;
-    border: 1px solid $white;
-    border-radius: 0.2em;
+    border: 1px solid $black;
+    border-radius: 0.5em;
   }
 
   .button {
@@ -38,6 +38,7 @@
     font-size: $fs-xsmall;
     cursor: pointer;
     transition: 200ms ease;
+    border-radius: 0.5em;
   }
 
   .radio {
@@ -47,7 +48,7 @@
     height: 0;
 
     &:checked ~ .button {
-      background-color: $white;
+      background-color: $background-white;
       color: $black;
     }
   }

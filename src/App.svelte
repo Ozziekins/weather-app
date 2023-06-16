@@ -69,45 +69,74 @@
       font-family: $font;
       font-size: $fs-default;
       font-weight: $fw-reg;
-      color: $white;
+      color: $black;
+    }
+
+    body {
+      background-image: url("./src/assets/background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-color: $background-white;
     }
   </style>
 </svelte:head>
 
-<div class="wrapper">
-  <header class="header">
-    <Header />
-  </header>
-  <div class="search-bar" role="search">
-    <SearchBar />
+<div class="container">
+  <div class="wrapper">
+    <header class="header">
+      <Header />
+    </header>
+    <div class="search-bar" role="search">
+      <SearchBar />
+    </div>
+    <main class="current">
+      <CurrentTemp />
+    </main>
+    <ForecastTemp />
   </div>
-  <main class="current">
-    <CurrentTemp />
-  </main>
-  <ForecastTemp />
 </div>
 
 <!-- App styles -->
 <style lang="scss">
   .wrapper {
     width: 100%;
-    min-height: 100vh;
-    background-image: url("./assets/background.jpg");
-    background-color: $lightgray;
+    min-height: 80vh;
+    // background-image: url("./src/assets/background.jpg");
+    background-color: $pure-white;
     background-blend-mode: multiply;
     background-size: cover;
-
     padding: 1.5rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
-
-    > * {
-      flex-grow: 0;
-    }
+    justify-content: center;
+    // align-items: center;
+    border-radius: 0.5rem;
+    // overflow: auto;
 
     @media (min-width: $bp-tablet) {
       padding: 2.5rem;
     }
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    height: 80vh;
+    // position: relative;
+  }
+
+  .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(249, 247, 254, 0.8);
+    z-index: -1;
   }
 
   .header {
@@ -116,6 +145,8 @@
 
   .search-bar {
     margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center; 
   }
 
   .current {

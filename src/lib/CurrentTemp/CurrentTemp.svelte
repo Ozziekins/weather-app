@@ -9,6 +9,7 @@
     temp: 0,
     feels_like: 0,
     humidity: 0,
+    wind: 0,
     description: "",
     iconCode: 0,
   };
@@ -26,6 +27,7 @@
         currentTemp.temp = data.main.temp;
         currentTemp.feels_like = data.main.feels_like;
         currentTemp.humidity = data.main.humidity;
+        currentTemp.wind = data.wind.speed;
         currentTemp.description = data.weather[0].description;
         currentTemp.iconCode = data.weather[0].id;
       });
@@ -44,7 +46,8 @@
 
     <div class="details">
       {toSentenceCase(currentTemp.description)} <br />
-      Humidity: {currentTemp.humidity}%
+      Humidity: {currentTemp.humidity}% <br />
+      Wind speed: {currentTemp.wind}%
     </div>
 
     <div class="weather-icon">
@@ -70,7 +73,7 @@
     line-height: 1.2;
 
     @media (min-width: $bp-tablet) {
-      font-size: $fs-xxlarge;
+      font-size: $fs-xlarge;
     }
   }
 
@@ -78,7 +81,7 @@
     font-size: $fs-medium;
     margin-bottom: 1em;
     @media (min-width: $bp-tablet) {
-      font-size: $fs-large;
+      font-size: $fs-medium;
     }
   }
 
@@ -86,7 +89,7 @@
     font-size: $fs-small;
     line-height: 1.2;
     @media (min-width: $bp-tablet) {
-      font-size: $fs-medium;
+      font-size: $fs-small;
     }
   }
 
@@ -113,7 +116,7 @@
     opacity: 0.6;
 
     * {
-      background: $transparent-gray;
+      background: $background-white;
     }
 
     .heading {
