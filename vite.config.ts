@@ -15,7 +15,7 @@ export default defineConfig({
 		  "$utils": path.resolve("./src/utils"),
 		},
 	  },
-	  base: "./weather-app/",
+	  base: "./",
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
 	}
