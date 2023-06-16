@@ -4,6 +4,7 @@ node_modules
 /dist
 # /.svelte-kit
 # /.github
+/.npmrc
 /package
 .env
 .env.*
