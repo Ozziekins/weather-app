@@ -35,6 +35,8 @@ jobs:
         run: |
           echo ".css text/css" > ./.github/mime.types
           echo ".js text/javascript" >> ./.github/mime.types
+      - name: Build
+        run: npm run build 
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
