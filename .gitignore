@@ -3,7 +3,7 @@ node_modules
 /build
 /dist
 # /.svelte-kit
-/.github
+# /.github
 /package
 .env
 .env.*
