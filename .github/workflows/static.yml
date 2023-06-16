@@ -35,6 +35,8 @@ jobs:
         run: |
           echo ".css text/css" > ./.github/mime.types
           echo ".js text/javascript" >> ./.github/mime.types
+      - name: Install
+        run: npm install 
       - name: Build
         run: npm run build 
       - name: Setup Pages
