@@ -1,6 +1,6 @@
 {
     "extends": "./.svelte-kit/tsconfig.json",
-    "include": ["vite.config.*", "vitest.config.*"],
+    "include": ["./vite.config.*", "./vitest.config.*"],
     "compilerOptions": {
       "composite": true,
       "module": "esnext",
