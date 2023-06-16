@@ -1,9 +1,12 @@
 {
+    "extends": "./.svelte-kit/tsconfig.json",
+    "include": ["vite.config.*", "vitest.config.*"],
     "compilerOptions": {
       "composite": true,
       "module": "esnext",
-      "moduleResolution": "node"
-    },
-    "include": ["vite.config.ts"]
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
+      "types": ["node"]
+    }
   }
   
